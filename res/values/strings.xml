@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">聊天生成器</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinnername">
+        <item>使用本机分辨率</item>
+        <item>960×640</item>
+        <item>600×800</item>
+        <item>800×1280</item>
+        <item>1080×1920</item>
+    </string-array>
+    
+    <string-array name="spinnertype">
+        <item>QQ</item>
+        <item>微信</item>
+        <item>QQ群</item>
+    </string-array>
+
+</resources>

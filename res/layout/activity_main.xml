@@ -1,0 +1,124 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 设置 -->
+
+    <ImageView
+        android:id="@+id/imageview_more"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+	android:background="@drawable/more_new"
+        android:entries="@array/spinnername" />
+     
+
+    <!-- 创建聊天 -->
+
+    <ImageView
+        android:id="@+id/imageview_create"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:background="@drawable/create_new"
+        android:onClick="onClick_Create"
+        android:visibility="visible" />
+
+    <!-- 分辨率&类型 -->
+
+    <RelativeLayout
+        android:id="@+id/relative_Dpi_Type"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/imageview_dpi_type"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dpi_type_new"/>
+
+        <!-- 分辨率下拉 -->
+
+        <Spinner
+            android:id="@+id/spinner_dpi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="90dp"
+            android:entries="@array/spinnername" />
+
+        <!-- 类型下拉 -->
+
+        <Spinner
+            android:id="@+id/spinner_type"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="135dp"
+            android:entries="@array/spinnertype" />
+    </RelativeLayout>
+
+    <!-- 上一步（1） -->
+
+    <ImageView
+        android:id="@+id/imageview_last_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/last_new"
+        android:onClick="onClick_Last_1"
+        android:visibility="invisible" />
+
+    <!-- 上一步（2） -->
+
+    <ImageView
+        android:id="@+id/imageview_last_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/last_new"
+        android:onClick="onClick_Last_2"
+        android:visibility="invisible" />
+
+    <!-- 下一步 -->
+
+    <ImageView
+        android:id="@+id/imageview_next"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/next_new"
+        android:onClick="onClick_Next"
+        android:visibility="invisible" />
+
+    <!-- 创建 -->
+
+    <ImageView
+        android:id="@+id/imageview_created"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/created_new"
+        android:onClick="onClick_Created"
+        android:visibility="invisible" />
+
+  
+
+</FrameLayout>
